@@ -1,6 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Test1">
-    <test name="Creepy">
+    <listeners>
+        <listener class-name="ExtentReporterNG"/>
+    </listeners>
+    <test name="Smoke Test">
         <classes>
             <class name="DemoTest"/>
         </classes>

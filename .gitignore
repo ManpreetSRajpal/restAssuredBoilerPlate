@@ -14,7 +14,6 @@ buildNumber.properties
 !/.mvn/wrapper/maven-wrapper.jar
 
 .gitignore
-.idea/inspectionProfiles/
-.idea/vcs.xml
-src/main/java/
+.idea/
 target/generated-test-sources/
+boilerPlate.iml

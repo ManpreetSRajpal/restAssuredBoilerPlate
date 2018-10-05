@@ -9,8 +9,8 @@ public class DemoTest {
 
     private static Logger log = LogManager.getLogger(DemoTest.class.getName());
 
-    @Test
-    public void demo() {
+    @Test(description = "Description in DemoTest")
+    public void run_demo_test() {
         log.info(" ------------> printing INFO log4j info of DEMO ");
         log.warn(" ------------> printing WARN log4j info of DEMO ");
         log.error(" ------------> printing ERROR log4j info of DEMO ");

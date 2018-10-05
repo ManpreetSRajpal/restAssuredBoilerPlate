@@ -8,8 +8,8 @@ public class Demo1Test {
 
     private static Logger log = LogManager.getLogger(Demo1Test.class.getName());
 
-    @Test
-    public void demo() {
+    @Test(description = "Description in Demo1 Test")
+    public void run_demo1_test() {
         log.info(" ------------> printing INFO log4j info of DEMO1 ");
         log.warn(" ------------> printing WARN log4j info of DEMO1 ");
         log.error(" ------------> printing ERROR log4j info of DEMO1 ");
