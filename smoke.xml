@@ -1,11 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Test1">
+    <parameter name="firstName" value="Manpreet"/>
     <listeners>
         <listener class-name="ExtentReporterNG"/>
     </listeners>
     <test name="Smoke Test">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+
         <classes>
             <class name="DemoTest"/>
+            <class name="Demo1Test"/>
         </classes>
     </test>
 </suite>

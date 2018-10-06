@@ -3,10 +3,15 @@
     <listeners>
         <listener class-name="ExtentReporterNG"/>
     </listeners>
-<test name="Regression Test">
-    <classes>
-        <class name="DemoTest"/>
-        <class name="Demo1Test"/>
-    </classes>
-</test>
+    <test name="Regression Test">
+        <groups>
+            <run>
+                <include name="Regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="DemoTest"/>
+            <class name="Demo1Test"/>
+        </classes>
+    </test>
 </suite>
